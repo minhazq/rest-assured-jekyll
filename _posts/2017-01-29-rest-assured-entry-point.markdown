@@ -3,7 +3,7 @@ title: Rest-Assured Entry Point
 date: 2017-01-29 17:57:00 -05:00
 ---
 
-The Entry point of the Rest-Assured framework is creating an instance of <u>*RequestSpacification*</u> Object. Basically you are calling *given()* static method of **RestAssured** Object.
+The Entry point of the Rest-Assured framework is creating an instance of *<u>RequestSpacification</u>* Object. Basically you are calling *given()* static method of **RestAssured** Object.
 <p>
 <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>package</span><span style='color:#004a43; '> com</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>mquraishi</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>restassured</span><span style='color:#800080; '>;</span>
 <span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>annotations</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>Test</span><span style='color:#800080; '>;</span>
