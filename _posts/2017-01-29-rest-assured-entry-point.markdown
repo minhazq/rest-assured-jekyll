@@ -28,5 +28,5 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 <li>param("param_name","param_value)</li>
 <li>when() --> Syntactic sugar</li>
 <li>get("/title") --> if you look for the title attribute</li>
-<li> then()--> **This is not Syntactic sugar**. This returns a **ResponseSpecification** Object
+<li> then()--> **This is not Syntactic sugar**. This returns a **ResponseSpecification** Object.</li>
   
