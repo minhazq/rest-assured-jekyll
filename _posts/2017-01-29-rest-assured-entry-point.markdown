@@ -29,4 +29,6 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 <li>when() --> Syntactic sugar</li>
 <li>get("/title") --> if you look for the title attribute</li>
 <li> then()--> **This is not Syntactic sugar**. This returns a **ResponseSpecification** Object.</li>
+<li>contentType("JSON").body("title", equalTo("MyTitle") --> Notice i am also verifying here</li>
+<li>You can also get the whole response object like this:<li>extract().response(); --> semicolon. Will return a Response Object.</li></li>
   
