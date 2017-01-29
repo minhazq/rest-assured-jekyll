@@ -21,4 +21,5 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 <p><li> Given = a context/Getting a system in a particular state</li>
 <li>When = soemthing happens/Poke it</li>
 <li>Then = we expect some outcome/examine the new state</li>
+<li>Some methods are doing nothing. This is added just for beauty. For example : and()</li>
 </p> 
