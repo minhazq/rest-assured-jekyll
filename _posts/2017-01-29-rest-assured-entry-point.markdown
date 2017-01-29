@@ -17,3 +17,8 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 <span style='color:#800080; '>}</span>
 </pre>
 </p>
+<p> Rest-Assured framework is build following BBD pattern.</p>
+<p><li> Given = a context/Getting a system in a particular state</li>
+<li>When = soemthing happens/Poke it</li>
+<li>Then = we expect some outcome/examine the new state</li>
+</p> 
