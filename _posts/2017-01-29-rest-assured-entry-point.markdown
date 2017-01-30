@@ -31,4 +31,24 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 <li> then()--> **This is not Syntactic sugar**. This returns a **ResponseSpecification** Object.</li>
 <li>contentType("JSON").body("title", equalTo("MyTitle") --> Notice i am also verifying here. You need org.hamcrest libs  for this. Also notice that you have to manually add import static org.hamcrest.Matchers.equalTo; because it is a static import</li>
 <li>You can also get the whole response object like this:extract().response(); --> semicolon. Will return a Response Object</li>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>package</span><span style='color:#004a43; '> com</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>mquraishi</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>restassured</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>annotations</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>Test</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> io</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>restassured</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>RestAssured</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> io</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>restassured</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>specification</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>RequestSpecification</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> static org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>hamcrest</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>Matchers</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>equalTo</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>class</span> AppTest <span style='color:#800080; '>{</span>
+ 
+	<span style='color:#808030; '>@</span>Test
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> test<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+		RequestSpecification given <span style='color:#808030; '>=</span> RestAssured<span style='color:#808030; '>.</span>given<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+		given<span style='color:#808030; '>.</span>
+			when<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>.</span>
+				get<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"http://www/google.com"</span><span style='color:#808030; '>)</span><span style='color:#808030; '>.</span>
+					then<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>.</span>
+						contentType<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"JSON"</span><span style='color:#808030; '>)</span><span style='color:#808030; '>.</span>
+						body<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"title"</span><span style='color:#808030; '>,</span>equalTo<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"MyTitle"</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+	<span style='color:#800080; '>}</span>
+<span style='color:#800080; '>}</span>
+</pre>
   
