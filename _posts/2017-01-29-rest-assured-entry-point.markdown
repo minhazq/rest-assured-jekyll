@@ -25,10 +25,10 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 </p> 
 <p> Now lets begin to construct a call. I will do the following</p>
 <li>RestAssured.given()</li>
-<li>param("param_name","param_value)</li>
-<li>when() --> Syntactic sugar</li>
-<li>get("/title") --> if you look for the title attribute</li>
+<li>param("param_name","param_value) if any</li>
+<li>when() --> Syntactic sugar. It returns same RequestSpecification</li>
+<li>get("/title") --> if you look for the title attribute. It is not sugur. It returns Response Object</li>
 <li> then()--> **This is not Syntactic sugar**. This returns a **ResponseSpecification** Object.</li>
-<li>contentType("JSON").body("title", equalTo("MyTitle") --> Notice i am also verifying here</li>
+<li>contentType("JSON").body("title", equalTo("MyTitle") --> Notice i am also verifying here. You need org.hamcrest libs  for this.</li>
 <li>You can also get the whole response object like this:extract().response(); --> semicolon. Will return a Response Object</li>
   
