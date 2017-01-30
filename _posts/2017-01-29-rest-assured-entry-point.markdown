@@ -71,3 +71,4 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
         <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>dependency</span><span style='color:#a65700; '>></span>
   <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>dependencies</span><span style='color:#a65700; '>></span>
 </pre>
+<p> Thats all for getting it started </p>
