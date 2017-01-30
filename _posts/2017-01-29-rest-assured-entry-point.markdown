@@ -29,6 +29,6 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 <li>when() --> Syntactic sugar. It returns same RequestSpecification</li>
 <li>get("/title") --> if you look for the title attribute. It is not sugur. It returns Response Object</li>
 <li> then()--> **This is not Syntactic sugar**. This returns a **ResponseSpecification** Object.</li>
-<li>contentType("JSON").body("title", equalTo("MyTitle") --> Notice i am also verifying here. You need org.hamcrest libs  for this.</li>
+<li>contentType("JSON").body("title", equalTo("MyTitle") --> Notice i am also verifying here. You need org.hamcrest libs  for this. Also notice that you have to manually add import static org.hamcrest.Matchers.equalTo; because it is a static import</li>
 <li>You can also get the whole response object like this:extract().response(); --> semicolon. Will return a Response Object</li>
   
