@@ -79,4 +79,5 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 <li>get().</li>
 <li>then().</li>
 <li>body(equalTo());</li>
+** Remember Right After then() part , Assertion part started. You got the response now you do whatever you want to do ** 
 <p> Thats all for getting it started </p>
