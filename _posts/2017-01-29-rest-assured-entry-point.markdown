@@ -24,7 +24,7 @@ The Entry point of the Rest-Assured framework is creating an instance of *<u>Req
 <li>Some methods are doing nothing. This is added just for beauty. For example : and(). This type of method called "Syntactic Sugar"</li>
 </p> 
 <p> Now lets begin to construct a call. I will do the following</p>
-<li>RestAssured.given()</li>
+<li>RestAssured.given(). If you write only given() in your script you will see error. You manually import stat io.restassured.RestAssured.given; Otherwise it will give compilation error. </li>
 <li>param("param_name","param_value) if any</li>
 <li>when() --> Syntactic sugar. It returns same RequestSpecification</li>
 <li>get("/title") --> if you look for the title attribute. It is not sugur. It returns Response Object</li>
